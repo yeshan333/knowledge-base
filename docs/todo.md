@@ -4,7 +4,7 @@
 
 - [x] 碎片知识整理，[awesome docsify](https://docsify.js.org/)
 - [ ] 再送它个后台(Using Flask or Django)，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)
-- [ ] restful APIs 体验，Cross-Platform之道
+- [ ] restful APIs 体验[🔗](https://github.com/yeshan333/RESTful-APIs)，Cross-Platform之道
 - [ ] 静态类型的Python？high performance，PEP484体验（mypy），[🔗](https://github.com/python/mypy)
 - [ ] Flask源码阅读，[🔗](https://github.com/pallets/flask/releases)
 - [ ] MAC Style CodeBlock(Flask Plugin)，[🔗](#/)
