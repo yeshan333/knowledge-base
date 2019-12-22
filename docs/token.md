@@ -36,6 +36,16 @@ spa？
 
 [service-worker](https://developers.google.com/web/fundamentals/primers/service-workers)
 
+### TDD
+
+>Test-Driven Development，测试驱动开发
+
+功能测试(functional tests)：用户角度，从外部测试应用。
+
+单元测试(unittest)：开发者角度，从内部测试应用。单元测试由功能测试驱动，最少的代码干掉失败测试。
+
+### Pipe and Filter
+
 ### 领域模型 & 业务模型
 
 ## UX/UI

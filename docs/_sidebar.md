@@ -5,5 +5,6 @@
   * [Todo](/todo.md)
 * **星辰碎片**
   * [术语大锅烩](/token.md)
+  * [真香定律](/codesmell.md)
 * **大道之行，天下为公**
   * [诉说](/contact.md)
