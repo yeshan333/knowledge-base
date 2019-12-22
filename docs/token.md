@@ -40,9 +40,11 @@ spa？
 
 >Test-Driven Development，测试驱动开发
 
-功能测试(functional tests)：用户角度，从外部测试应用。
+>功能测试(functional tests)：用户角度，从外部测试应用。
 
-单元测试(unittest)：开发者角度，从内部测试应用。单元测试由功能测试驱动，最少的代码干掉失败测试。
+>单元测试(unittest)：开发者角度，从内部测试应用。单元测试由功能测试驱动，最少的代码干掉失败测试。
+
+![http://www.obeythetestinggoat.com/book/chapter_philosophy_and_refactoring.html#_recap_the_tdd_process](_media/TDD.png)
 
 ### Pipe and Filter
 
