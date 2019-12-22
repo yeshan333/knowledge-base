@@ -8,7 +8,7 @@
 
 # 关于我
 
-?> 请路过的大佬无视此处
+?> 请路过的大佬无视此处，![GitHub followers](https://img.shields.io/github/followers/yeshan333?style=social)
 
 ```rust
 #![allow(unused_variables)]

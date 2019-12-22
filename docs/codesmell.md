@@ -25,3 +25,6 @@
 |:--:|:--:|:--:|:--:|
 
 
+## Efficiency
+
+- [vscode settings](https://gist.github.com/yeshan333/2f219672ddfcae7b58d64c3df71d7280)
