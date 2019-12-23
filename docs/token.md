@@ -52,6 +52,19 @@ spa？
 
 ## UX/UI
 
+![UI/UX Designer](https://img.vim-cn.com/fb/de0173478bfa210942fc057dfd54ff8ed74017.png)
+
+![Design Principles](https://img.vim-cn.com/5d/140f4e4fe5718d19aa5d1611851833c511ce75.jpg)
+
+![Creative UX Process](https://img.vim-cn.com/ac/ee0a1f1c717ee1be4b9896d48715edc441b751.jpg)
+
+
+- [7 steps to become a UI/UX designer](https://blog.nicolesaidy.com/7-steps-to-become-a-ui-ux-designer-8beed7639a95)
+
+- [Principles of Design Quick Reference Poster](https://paper-leaf.com/blog/2012/10/principles-of-design-quick-reference-poster/)
+
+- [GOodUI](https://goodui.org/#ideas-1)
+
 ### PPI
 
 >每英寸像素（PPI，Pixels Per Inch），又称像素密度。1 英寸(in)= 2.54 厘米(cm)。PPI是一个表示打印图像或者显示器单位面积上像素数量的指数。一般用来计量电脑显示器，电视机和手持电子设备屏幕的精细程度。通常情况下，每英寸像素值越高，屏幕能显示的图像也越精细。电脑与手机屏幕的每英寸像素值取决于尺寸和分辨率，通常指的就是每英寸上的像素点数。

@@ -13,4 +13,4 @@
 - [ ] 拥抱Java霸霸，[🔗](https://github.com/akullpp/awesome-java)
 - [ ] 基地文档redo（移除Markup痛点），选型MkDocs[🔗](https://markdown-docs-zh.readthedocs.io/zh_CN/latest/)，坐等网站，此处艾特[QQ](1968747146)
 - [ ] 原型设计之道
-- [ ] TDD
+- [x] TDD初探
