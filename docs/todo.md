@@ -2,6 +2,7 @@
 
 ?>我有一技（“瞬间遗忘大法”）😓。想法太多，想要做的事太多，先记下来，不管能不能完成，爽一把再说！
 
+- [ ] 2019年终总结，xxx安和桥歌词
 - [x] 碎片知识整理，[awesome docsify](https://docsify.js.org/)
 - [ ] 再送它个后台(Using Flask or Django)，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)
 - [ ] restful APIs 体验[🔗](https://github.com/yeshan333/RESTful-APIs)，Cross-Platform之道
