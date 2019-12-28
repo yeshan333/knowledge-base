@@ -16,3 +16,4 @@
 - [x] TDD初探
 - [ ] 再深入了解下Git，[Pro Git](https://developer.aliyun.com/article/720615?spm=a2c6h.12873639.0.0.176712eeP7J5d0)、[Git内部原理揭秘](https://mp.weixin.qq.com/s/UQKrAR3zsdTRz8nFiLk2uQ)
 - [ ] 《Cloud Native Python》阅读，[🔗](https://subscription.packtpub.com/book/application_development/9781787129313)
+- [ ] 容器化实践
