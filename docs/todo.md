@@ -2,7 +2,7 @@
 
 ?>我有一技（“瞬间遗忘大法”）😓。想法太多，想要做的事太多，先记下来，不管能不能完成，爽一把再说！
 
-- [ ] 2019年终总结，xxx安和桥歌词
+- [ ] 2019年终总结，xxx安和桥歌词，思路，[🔗](https://www.yuque.com/leshiyi/diary/wmczg4)
 - [x] 碎片知识整理，[awesome docsify](https://docsify.js.org/)
 - [ ] 再送它个后台(Using Flask or Django)，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)
 - [ ] restful APIs 体验[🔗](https://github.com/yeshan333/RESTful-APIs)，Cross-Platform之道
@@ -19,4 +19,4 @@
 - [ ] 《Cloud Native Python》阅读，[🔗](https://subscription.packtpub.com/book/application_development/9781787129313)
 - [ ] 应用容器化实践
 - [ ] 软件架构编年史系列文章阅读，[🔗](https://www.jianshu.com/p/b477b2cc6cfa)
-- ThoughtWorks的细说API系列文章阅读，[🔗](https://insights.thoughtworks.cn/api-restful/)
+- [ ] ThoughtWorks的细说API系列文章阅读，[🔗](https://insights.thoughtworks.cn/api-restful/)
