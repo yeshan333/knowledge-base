@@ -7,6 +7,7 @@
   * [术语大锅烩](/token.md)
   * [真香定律](/codesmell.md)
   * [前端碎片](/frontend.md)
+  * [Linux](linux.md)
 * **洞悉技术的本质，勘破历史的长轮**
   * [格物致知](/theory.md)
 * **大道之行，天下为公**

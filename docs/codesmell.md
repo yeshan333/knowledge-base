@@ -37,7 +37,7 @@
   - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)：代码美化，可以用来把压缩过后的代码进行美化
   - [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)：CSS代码Peek，真香
   - [Easy LESS](https://marketplace.visualstudio.com/items?itemName=mrcrowl.easy-less)：快速compile LESS，写完Less文件后Ctrl+S保存自动生成对应的CSS文件
-  - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)：vscode快速同步浏览器刷新，可快速启动HTTP服务器，Ctrl+S实时监控变化，再也不用手动刷新重加载了，功能贼🐓儿多，慢慢探索
+  - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)：vscode快速同步浏览器刷新，可快速启动HTTP服务器，Ctrl+S实时监控变化，再也不用手动刷新重加载了，功能贼🐓儿多，慢慢探索，**终极热重载**
 
 **Live Share**
 
