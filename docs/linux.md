@@ -1,5 +1,7 @@
 # Linux常规操作
 
+![常见目录名介绍](https://img.vim-cn.com/4f/997ad5a19156a30ad1c9c0cecdb8f6f1e65a6e.png)
+
 ## 常用命令
 
 - 常用系统工作命令
@@ -28,6 +30,7 @@
   - `tar xzvf etc.tar.gz -C xxx/xx`解压到指定的xxx/xx目录
 - 搜索
   - `grep`
+  - `find`按指定条件查找文件，`find .git/objects -type f`查找.git/objects目录下的所有文本文件。`-type b/d/c/p/l/f`用于指定查找文件类型
 
 ## 环境变量
 
