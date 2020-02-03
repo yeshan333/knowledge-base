@@ -13,9 +13,9 @@
 - [ ] 兴趣，awesome Rust xxx Typescript。WebAssembly未来已至？我x
 - [ ] 拥抱Java霸霸，[🔗](https://github.com/akullpp/awesome-java)
 - [x] 基地文档redo（移除Markup痛点），选型MkDocs[🔗](https://markdown-docs-zh.readthedocs.io/zh_CN/latest/)操作了一波，MkDocs项目一年多没更新了，放弃，坐等网站，此处艾特[QQ](1968747146)
-- [ ] 原型设计之道
+- [ ] 原型设计之道x
 - [x] TDD初探
-- [ ] 再深入了解下Git，[Pro Git](https://developer.aliyun.com/article/720615?spm=a2c6h.12873639.0.0.176712eeP7J5d0)、[Git内部原理揭秘](https://mp.weixin.qq.com/s/UQKrAR3zsdTRz8nFiLk2uQ)
+- [x] 再深入了解下Git，[Pro Git](https://developer.aliyun.com/article/720615?spm=a2c6h.12873639.0.0.176712eeP7J5d0)、[Git内部原理揭秘](https://mp.weixin.qq.com/s/UQKrAR3zsdTRz8nFiLk2uQ)
 - [ ] 《Cloud Native Python》阅读，[🔗](https://subscription.packtpub.com/book/application_development/9781787129313)
 - [ ] 应用容器化实践
 - [ ] 软件架构编年史系列文章阅读，[🔗](https://www.jianshu.com/p/b477b2cc6cfa)
