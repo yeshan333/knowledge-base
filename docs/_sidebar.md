@@ -7,6 +7,7 @@
   * [术语大锅烩](/token.md)
   * [真香定律](/codesmell.md)
   * [前端碎片](/frontend.md)
+  * [后端碎片](/backend.md)
   * [Linux](linux.md)
   * [Git](git.md)
 * **洞悉技术的本质，勘破历史的长轮**
