@@ -6,7 +6,7 @@
 - [x] 碎片知识整理，[awesome docsify](https://docsify.js.org/)
 - [ ] 再送它个后台(Using Flask or Django)，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)
 - [x] restful APIs 体验[🔗](https://github.com/yeshan333/RESTful-APIs)，Cross-Platform之道
-- [ ] 静态类型的Python？high performance，PEP484体验（mypy），[🔗](https://github.com/python/mypy)
+- [xx] 静态类型的Python？high performance，PEP484体验（mypy），[🔗](https://github.com/python/mypy)
 - [ ] Flask源码阅读，[🔗](https://github.com/pallets/flask/releases)
 - [ ] MAC Style CodeBlock(Flask Plugin)，[🔗](#/)
 - [ ] 精益之道，Fluent Python，[🔗](https://github.com/fluentpython)
@@ -18,5 +18,5 @@
 - [x] 再深入了解下Git，[Pro Git](https://developer.aliyun.com/article/720615?spm=a2c6h.12873639.0.0.176712eeP7J5d0)、[Git内部原理揭秘](https://mp.weixin.qq.com/s/UQKrAR3zsdTRz8nFiLk2uQ)
 - [ ] 《Cloud Native Python》阅读，[🔗](https://subscription.packtpub.com/book/application_development/9781787129313)
 - [ ] 应用容器化实践
-- [ ] 软件架构编年史系列文章阅读，[🔗](https://www.jianshu.com/p/b477b2cc6cfa)
+- [x] 软件架构编年史系列文章阅读，[🔗](https://www.jianshu.com/p/b477b2cc6cfa)
 - [x] ThoughtWorks的细说API系列文章阅读，[🔗](https://insights.thoughtworks.cn/api-restful/)
