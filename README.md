@@ -1,1 +1,1 @@
-> An awesome project. 不接受反驳
+Used to organize some fragmented knowledge.
