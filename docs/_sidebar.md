@@ -7,6 +7,7 @@
   * [术语大锅烩](/token.md)
   * [真香定律](/codesmell.md)
   * [操作系统](/operatingSystems.md)
+  * [软件工程](/softwareEngineering.md)
   * [前端碎片](/frontend.md)
   * [后端碎片](/backend.md)
   * [Linux](linux.md)

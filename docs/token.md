@@ -54,6 +54,10 @@ spa？
 
 ### 领域模型 & 业务模型
 
+Domain-Driven Design/Model-Driven Design 中的 Domain 与 Model（领域模型）主要是指后者，即“偏向代码实现的（领域）对象”。Eric Evans 所提倡的“领域模型”是与实现代码紧密相关的，也就是属于通常所说的 OOD（面向对象设计）产出的系统|软件设计模型（Design Model）中的一部分，这里的领域模型及其实现代码这两者都属于软件开发中的解决域|范畴（Solution domain）。
+
+> 参考：https://www.zhihu.com/question/25089273
+
 ## UX/UI
 
 ![UI/UX Designer](https://img.vim-cn.com/fb/de0173478bfa210942fc057dfd54ff8ed74017.png)
