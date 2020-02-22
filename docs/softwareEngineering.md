@@ -157,3 +157,21 @@
 > https://zh.wikipedia.org/zh-hans/ISO/IEC_9126
 
 ![ISO/IEC 9126 软件质量模型](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200215215743.png)
+
+## 结构化方法
+
+**指导思想**：自顶向下，逐层分解。
+
+**基本原则**：功能的分解与抽象。
+
+### 系统设计之模块化
+
+?> 模块，系统组成的基本单位，特点是可组合、分解和更换。模块化是将一个待开发的软件分解成若干个小的简单部分-模块每个模块可**独立**的进行开发、测试，最后组装成完整的程序，将一个复杂的问题“分而治之”。衡量模块独立程度的标准：**内聚性和耦合性**。
+
+[耦合性](https://zh.wikipedia.org/wiki/%E8%80%A6%E5%90%88%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8))(Coupling)，也叫耦合度，是对**模块间**关联程度的度量。
+
+![耦合性](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200222141749.png)
+
+[内聚性](https://zh.wikipedia.org/wiki/%E5%85%A7%E8%81%9A%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8))(Cohesion)。是对一个模块**内部**各个元素彼此结合的紧密程度的度量。
+
+![内聚性](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200222141840.png)

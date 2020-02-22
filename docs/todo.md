@@ -21,3 +21,4 @@
 - [x] 软件架构编年史系列文章阅读，[🔗](https://www.jianshu.com/p/b477b2cc6cfa)
 - [x] ThoughtWorks的细说API系列文章阅读，[🔗](https://insights.thoughtworks.cn/api-restful/)
 - [ ] 《计算机是怎样跑起来的》、《程序是怎样跑起来的》、《网络是怎样连接的》阅读
+- [ ] 码农翻身公众号整理的系列文章，[🔗](https://mp.weixin.qq.com/s/1OSxdYuKByCwVTe-8FgrFA)
