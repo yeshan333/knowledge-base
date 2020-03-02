@@ -52,5 +52,33 @@ Material Design Icons for Visual Studio Code，不够帅都用不下去(*^_^*)
 ### 后端效率
 
 
+### Google 搜索
+
+free：https://github.com/Alvin9999/new-pac
+
+```shell
+# ssr 多用户管理
+# 安装教程：http://www.nbmao.com/archives/3052 # 脚本：https://github.com/FunctionXJB/SSR-Bash-Python yum -y install wget yum install perl # 安装&更新 wget -q -N --no-check-certificate https://raw.githubusercontent.com/hotmop/SSR-duoyonghu/master/install.sh && bash install.sh # 卸载 wget -q -N --no-check-certificate https://raw.githubusercontent.com/hotmop/SSR-duoyonghu/master/install.sh && bash install.sh uninstall
+```
+
+```shell
+# 1.安装wget下载器，http://www.gnu.org/software/wget/ yum -y install wget # 2.逗比ssr脚本，https://github.com/ToyoDAdoubi/doubi#ssrsh wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+```
+
+**Centos 7 BBR**
+
+```shell
+sudo wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+reboot # 重启
+# 查看内核是否开启 bbr
+sysctl net.ipv4.tcp_available_congestion_control
+# 示例结果 net.ipv4.tcp_available_congestion_control = reno cubic bbr
+
+# 查看 bbr 是否装载好了
+lsmod | grep bbr
+# 示例结果：tcp_bbr                20480  13
+```
+
+
 
 
