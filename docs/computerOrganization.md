@@ -2,6 +2,8 @@
 
 ![计算机](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200216204537.png)
 
+## 定理&规律
+
 ## 计算机硬件基础架构
 
 ### 冯·诺伊曼体系结构
@@ -33,3 +35,79 @@ $$ 带宽 = \frac{位宽 \times 工作频率}{8} $$
 存储器容量：内存(主存)、外存(辅存容量)
 
 ![demo](https://cdn.jsdelivr.net/gh/ssmath/mypic/img/20200226102903.jpg)
+
+## 处理器
+
+## 存储与IO系统
+
+![存储器层次关系](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200304092527.png)
+
+![形象比喻](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200304092858.png)
+
+### 三级缓存
+
+#### CPU的缓存更新策略
+
+**写直达(write-through)**：
+
+**写回(write-back)**：
+
+#### 缓存一致性与MESI协议
+
+缓存一致性问题解决机制需满足的条件：
+- 写传播：在一个 CPU 核心的 Cache 数据更新必须能后传播到其他相应节点的 Cache Line 里
+- 事务串行化：在一个 CPU 核心里的读取和写入，在其他节点看起来顺序是一样的
+
+**解决方案**
+
+总线嗅探（Bus Snooping），基于总线嗅探机制的 [MESI](https://zh.wikipedia.org/zh-hans/MESI%E5%8D%8F%E8%AE%AE) 协议
+
+
+### 内存
+
+#### 虚拟内存到物理内存的多级页表
+
+#### 虚拟内存到物理内存转换的性能提速
+
+地址变换高速缓冲（TLB,Translation-Lookaside Buffer）
+
+#### 内存保护策略
+
+wikipedia：[https://zh.wikipedia.org/wiki/記憶體保護](https://zh.wikipedia.org/wiki/%E8%A8%98%E6%86%B6%E9%AB%94%E4%BF%9D%E8%AD%B7)
+
+**可执行空间保护**
+
+**地址空间部署随机化**
+
+### 设备通信的线路-总线
+
+>事件总线知多少：https://cloud.tencent.com/developer/article/1018409
+
+大型系统开发的设计模式-事件总线(Event Bus)
+
+![Event-Bus-image](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200304101102.jpg)
+
+#### 多总线架构
+
+CPU 与内存以及高速缓存通信的总线：
+- 本地总线（也叫后端总线([Back-side Bus](https://en.wikipedia.org/wiki/Back-side_bus))，）：CPU 与 Cache 通信
+- [前端总线](https://zh.wikipedia.org/wiki/%E5%89%8D%E7%AB%AF%E6%80%BB%E7%BA%BF)(Front-side Bus)：CPU 与[北桥芯片](https://zh.wikipedia.org/zh-hans/%E5%8C%97%E6%A1%A5)通信
+北桥芯片拆分的前端总线：
+- 内存总线（Memory Bus）
+- 系统总线（System Bus）
+
+![CPU 硬件架构图](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200304104022.jpg)
+
+CPU 内的内存接口直接和系统总线通信，然后系统总线再接入一个 I/O 桥接器。这个 I/O 桥接器(I/O Bridge)一边接入了内存总线，使得 CPU 和内存通信。另一边接入 I/O 总线，用于连接 I/O 设备。
+
+#### 多设备通信的总线裁决机制
+
+>wikipedia：https://en.wikipedia.org/wiki/Arbiter_(electronics)
+
+#### 现代的Intel-QPI技术
+
+>[快速通道互联](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E9%80%9A%E9%81%93%E4%BA%92%E8%81%94)（英语：Intel QuickPath Interconnect，缩写：QPI），是一种由英特尔开发并使用的点对点处理器互联架构，用来实现CPU之间的互联。
+
+### 输入输出设备
+
+### SSD、HDD
