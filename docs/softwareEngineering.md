@@ -175,3 +175,17 @@
 [内聚性](https://zh.wikipedia.org/wiki/%E5%85%A7%E8%81%9A%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8))(Cohesion)。是对一个模块**内部**各个元素彼此结合的紧密程度的度量。
 
 ![内聚性](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200222141840.png)
+
+## 面向对象方法
+
+$$ 面向对象(Object-Oriented)=对象(Object)+分类(Classification)+继承(Inheritance)+通过消息的通信(Communication With Messages) $$
+
+对象：数据属性+操作数据的行为
+
+消息：对象之间进行通信的一种构造
+
+类：对象之上的抽象，对象是类的具体化，是类的实例
+
+继承：父类与子类之间共享数据和方法的机制。子类可继承父类中的属性和方法而不必重新定义
+
+多态：不同对象收到同一消息可以产生完全不同的结果
