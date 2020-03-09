@@ -22,7 +22,7 @@
 
 运算速度：
   - 系统[时钟频率](https://zh.wikipedia.org/zh-hans/%E6%97%B6%E9%92%9F%E9%A2%91%E7%8E%87)（CPU外频/基频）：CPU 与外部组件进行数据传输的速度
-  - CPU 倍频：CPU内部用来加速工作效能的一个倍数，CPU 与系统总线相差的倍数，$ CPU 主屏 = CPU 外频 \times CPU 倍频 $
+  - CPU 倍频：CPU内部用来加速工作效能的一个倍数，CPU 与系统总线相差的倍数，$ CPU 主频 = CPU 外频 \times CPU 倍频 $
   - IPS(Instruction Per Second)：每秒执行指令数
   - CPI(Clock-cycle Per Instruction)：指令平均周期，执行一条指令所需要的时钟周期
   - [FLOPS](https://zh.wikipedia.org/zh-cn/%E6%AF%8F%E7%A7%92%E6%B5%AE%E9%BB%9E%E9%81%8B%E7%AE%97%E6%AC%A1%E6%95%B8)(floating-point operations per second)：每秒浮点运算速度
@@ -37,6 +37,76 @@ $$ 带宽 = \frac{位宽 \times 工作频率}{8} $$
 ![demo](https://cdn.jsdelivr.net/gh/ssmath/mypic/img/20200226102903.jpg)
 
 ## 处理器
+
+### CPU 抽象逻辑图
+
+![CPU 抽象逻辑图](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200309160137.png)
+
+### CPU 浅解
+
+![](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200309150658.png)
+
+Fetch(取指令)：PC 寄存器与指令寄存器从内存获取指令
+
+Decode(指令译码)：由控制器（Control Unit）操作
+
+Execute(指令执行)：由算术逻辑单元（ALU）操作
+
+?>所有 CPU 支持的指令，都会在控制器里面，被解析成不同的输出信号。
+
+?>[控制器](https://baike.baidu.com/item/%E6%8E%A7%E5%88%B6%E5%99%A8)由指令寄存器IR（InstructionRegister）、程序计数器PC（ProgramCounter）和操作控制器0C（OperationController）三个部件组成
+
+!>CPU 取指令过后，将指令（一个由0，1构成的字符串）输入译码电路，译码电路根据指令集的描述，生成各种控制信号。**指令集可以看作是 CPU 行为的描述，而 CPU 里面的电路是指令集的实现**。指令集不会被“存储”在某处
+
+#### CPI-指令周期
+
+![CPI-指令周期](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/try20200309151603.png)
+
+?>时钟周期也称为振荡周期，定义为时钟频率的倒数。时钟周期是计算机中最基本的、最小的时间单位。
+
+!>对于现代 CPU，随着流水线设计的引入，一个指令被拆分为多个子流程。一个CPU的时钟时间，应该是这多个子流程中最长的那条的耗时时间
+
+### 无状态电路元件-ALU
+
+>组合逻辑电路（Combinational Logic Circuit）: 给定输入，就能得到固定的输出。
+
+#### 加法器与乘法器
+
+常见门电路表示
+
+![常见门电路](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200309142214.png)
+
+##### 加法器
+
+加法：二进制竖式运算
+
+![二进制竖式计算](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200309142549.png)
+
+**半加器电路**
+
+![半加器电路](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/img/20200309142750.png)
+
+**全加器电路：两个半加器 + 或门**
+
+![全加器电路](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/new/20200309144027.png)
+
+**由 8 个全加器组成的 8 位加法器**
+
+![8 位加法器](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/new/20200309143727.png)
+
+##### 乘法器
+
+乘法：二进制竖式运算，**移位 + 加法**
+
+![乘法：二进制竖式运算](https://cdn.jsdelivr.net/gh/ssmath/images-assets-cdn/new/20200309144427.png)
+
+### 有状态电路元件-寄存器
+
+>时序逻辑电路（Sequential Logic Circuit）: 解决“自动”运行、存储与时序协调问题
+
+https://time.geekbang.org/column/article/99092
+
+反馈电路与时钟信号、存储与 D 型触发器
 
 ## 存储与IO系统
 
