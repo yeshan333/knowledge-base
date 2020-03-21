@@ -23,3 +23,7 @@ RESTful APIs典型场景
 参考：[DevOps 实战：Jenkins Docker](https://cloud.tencent.com/developer/article/1575521)
 
 PS：感觉这篇文章也可以叫从 Docker 看云计算的演进
+
+## Python
+
+### shallow copy&deep copy

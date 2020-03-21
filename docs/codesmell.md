@@ -51,6 +51,7 @@ Material Design Icons for Visual Studio Code，不够帅都用不下去(*^_^*)
 
 ### 后端效率
 
+- docs string 自动生成：[autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 
 ### Google 搜索
 
