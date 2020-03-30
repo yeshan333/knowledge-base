@@ -6,7 +6,15 @@
 
 ![OSI七层模型、TCP/IP四层模型](https://i.loli.net/2020/03/22/qthHTNlXyOvEfm3.png)
 
-## HTTP1.0与HTTP1.1
+## HTTP
+
+- **HTTP 1.0**：一个 TCP 连接只可以发送一个 HTTP 请求，每次请求都需要重新建立和断开 TCP 连接
+- **HTTP 1.1**：引入持久连接，使用 Header 头 `Connection: keep-alive`维持持久连接，一个连接可发送多个 HTTP 请求（但一个时刻只能发送一个），response 使用  `Connection: close` Header 断开连接
+- **HTTP 2.0**：多路复用，一个 TCP 连接中可同时完成多个 HTTP 请求
+
+>参考：
+>[HTTP/1.x 的连接管理](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Connection_management_in_HTTP_1.x#HTTP_%E6%B5%81%E6%B0%B4%E7%BA%BF)
+>[你猜一个 TCP 连接上面能发多少个 HTTP 请求](https://zhuanlan.zhihu.com/p/61423830)
 
 ### Session与Cookie
 
