@@ -32,6 +32,16 @@
   - `grep`
   - `find`按指定条件查找文件，`find .git/objects -type f`查找.git/objects目录下的所有文本文件。`-type b/d/c/p/l/f`用于指定查找文件类型
 
+### Linux 文本处理三剑客
+
+- grep
+- awk
+- sed
+
+![与SQL类比](https://i.loli.net/2020/04/08/GKUlfpc4aJPEQVA.png)
+
+参考：[轻松掌握 Linux 文本处理三剑客：grep、awk 和 sed 实战演练](https://zhuanlan.zhihu.com/p/83307402)
+
 ## 环境变量
 
 Linux系统中，环境变量名称一般为大写形式。可用`env`命令查看当前系统中的所有环境变量。一个变量的值可能会因用户的不同而不同。可使用`export`将变量提升为全局变量。

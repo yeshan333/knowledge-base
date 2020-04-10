@@ -1,5 +1,16 @@
 # 不止于后端
 
+## SSO 单点登录系统的实现
+
+- https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/authority-certification/sso.md
+- [系统的讲解 - SSO单点登录](https://www.imooc.com/article/286710)
+
+## 消息队列
+
+
+
+## 缓存
+
 ## RESTful APIs
 
 RESTful APIs典型场景

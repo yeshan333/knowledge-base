@@ -35,6 +35,12 @@
 
 ## TCP四次挥手结束TCP连接
 
-![TCP四次挥手](https://i.loli.net/2020/03/23/RFQ5LSwc8EmJBeo.png)
+![TCP四次挥手](https://i.loli.net/2020/03/22/ApsXC7E1Mwzdqae.png)
 
 - **终止 FIN**：控制位，用来释放一个连接，当 FIN=1 时，表示此报文段的发送方的数据已发送完毕，并要求释放连接。
+
+!> 服务端的 CLOSE-WAIT 状态：为了让服务器端发送还未传送完毕的数据，传送完毕之后，服务器会发送 FIN 连接释放报文。
+
+!> 客户端的 TIME—WAIT 状态：等待一个时间计时器设置的时间 2MSL(maximium segment lifetime，最长报文寿命)。确保最后一个确认报文段能够到达，同时让本连接持续时间内所产生的所有报文段都从网络中消失，使得下一个新的连接不会出现旧的连接请求报文段。
+
+参考：[跟着动画来学 TCP 三次握手和四次挥手](https://juejin.im/post/5b29d2c4e51d4558b80b1d8c)

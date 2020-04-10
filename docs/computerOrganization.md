@@ -132,6 +132,8 @@ https://time.geekbang.org/column/article/99092
 
 总线嗅探（Bus Snooping），基于总线嗅探机制的 [MESI](https://zh.wikipedia.org/zh-hans/MESI%E5%8D%8F%E8%AE%AE) 协议
 
+> MESI 协议，是一种叫作写失效（Write Invalidate）的协议。在写失效协议里，只有一个 CPU 核心负责写入数据，其他的核心，只是同步读取到这个写入。在这个 CPU 核心写入 Cache 之后，它会去广播一个“失效”请求告诉所有其他的 CPU 核心。
+
 
 ### 内存
 
