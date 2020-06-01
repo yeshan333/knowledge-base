@@ -4,11 +4,10 @@
 
 - [x] 2019年终总结，xxx安和桥歌词，思路，[🔗](https://www.yuque.com/leshiyi/diary/wmczg4)
 - [x] 碎片知识整理，[awesome docsify](https://docsify.js.org/)
-- [ ] 再送它个后台(Using Flask or Django)，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)
+- [x] ~~再送它个后台(Using Flask or Django)~~，致敬开源❤👉[🔗](https://github.com/WebStackPage/WebStackPage.github.io)（感觉不太合适，去学习高并发架构的知识了），帮 React 中文文档修改了几次错误也算是致敬吧
 - [x] restful APIs 体验[🔗](https://github.com/yeshan333/RESTful-APIs)，Cross-Platform之道
 - [x] 静态类型的Python？high performance，PEP484体验（mypy），[🔗](https://github.com/python/mypy)
 - [ ] Flask源码阅读，[🔗](https://github.com/pallets/flask/releases)
-- [ ] MAC Style CodeBlock(Flask Plugin)，[🔗](#/)
 - [ ] 精益之道，Fluent Python，[🔗](https://github.com/fluentpython)
 - [x] 兴趣，awesome Rust xxx Typescript。WebAssembly未来已至？我x
 - [x] 拥抱Java霸霸，[🔗](https://github.com/akullpp/awesome-java)
@@ -23,3 +22,4 @@
 - [ ] 《计算机是怎样跑起来的》、《程序是怎样跑起来的》、《网络是怎样连接的》阅读
 - [x] 码农翻身公众号整理的系列文章，[🔗](https://mp.weixin.qq.com/s/1OSxdYuKByCwVTe-8FgrFA)
 - [ ] Serverless 浅析
+- [ ] 深入云原生

@@ -33,6 +33,14 @@
 
 ?> **为什么需要三次握手**：为了防止已失效的**连接请求报文段**突然又传送到了服务端，占用服务器资源。（如果是两次握手，服务端接收到的可能是已经超时才传到连接请求报文，客户端已经不承认了）。
 
+### 三次握手流程简述
+
+- 第一次握手：server 端处于 LISTEN 状态，client 端向 server 端发送 SYN 包后进入 SYN_SEND 状态；
+
+- 第二次握手：server 端收到 client 端的 SYN 包后，ACK client 端的 SYN 包并且自己也发送个 SYN 包，server 端进入 SYN-RECV 状态；
+
+- 第三次握手：client端 收到 server 端的 ACK + SYN 包后，向服务端发送 ACK 包，发送完毕后，server 端和 client 进入ESTABLISHED 状态。
+
 ## TCP四次挥手结束TCP连接
 
 ![TCP四次挥手](https://i.loli.net/2020/03/22/ApsXC7E1Mwzdqae.png)
@@ -53,7 +61,6 @@
 
 ## 1、请详细介绍下 TCP 的三次握手机制，为什么需要三次握手？
 
-第一次握手，
 
 
 - 为什么需要握手，为什么是三次握手？

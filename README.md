@@ -1,8 +1,8 @@
-Used to organize some fragmented knowledge.
+Used to organize some fragmented knowledges.
 
 ---
 
-```shell
+```shells
 # preview
 docsify serve docs
 ```
