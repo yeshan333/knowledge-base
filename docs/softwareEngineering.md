@@ -203,17 +203,31 @@
 - 不同移动设备终端的不同浏览器下，验证登录页面的显示以及功能正确性；
 - 不同分辨率的界面下，验证登录页面的显示以及功能正确性。
 
-#### 黑盒测试
+#### 黑盒测试之等价类划分
 
-[黑盒测试](https://zh.wikipedia.org/wiki/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95)也称为功能测试，在完全**不考虑软件的内部结构和特性**的情况下，测试软件的外部特性。
+>[黑盒测试](https://zh.wikipedia.org/wiki/%E9%BB%91%E7%9B%92%E6%B5%8B%E8%AF%95)也称为功能测试，在完全**不考虑软件的内部结构和特性**的情况下，测试软件的外部特性。
 
-#### 白盒测试
+![例题](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604194356.png)
+
+![解答01](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604194444.png)
+
+测试用例设计
+
+![为等价类设计测试用例](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604194534.png)
+
+![为每一个无效等价类设计测试用例](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604194636.png)
+
+!> 注意点：为等价类设计测试用例时，要使测试用例**尽可能多的覆盖等价类**；而为无效等价类设计测试用例时，**一个测试用例覆盖一个无效等价类**。
+
+#### 白盒测试之逻辑覆盖测试
 
 [白盒测试](https://zh.wikipedia.org/wiki/%E7%99%BD%E7%9B%92%E6%B5%8B%E8%AF%95)也成为结构测试，根据程序的内部结构和逻辑来设计测试用例，对程序的路径和过程进行测试，检查是否满足设计的需要。
 
 ![白盒测试原则](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200215215050.png)
 
 ?> **Alpha** 测试由有代表性的最终用户在开发者场所进行，**Beta** 测试在一个或多个最终用户场所执行。
+
+![https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604200344.png](https://mypic-1258313760.cos.ap-guangzhou.myqcloud.com/img/20200604200344.png)
 
 ### ISO/IEC 9126 软件质量模型
 
@@ -241,7 +255,7 @@
 
 ## 面向对象方法
 
-$$ 面向对象(Object-Oriented)=对象(Object)+分类(Classification)+继承(Inheritance)+通过消息的通信(Communication With Messages) $$
+>面向对象(Object-Oriented)=对象(Object)+分类(Classification)+继承(Inheritance)+通过消息的通信(Communication With Messages)
 
 对象：数据属性+操作数据的行为
 
