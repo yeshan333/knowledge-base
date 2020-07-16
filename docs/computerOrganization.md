@@ -4,6 +4,11 @@
 
 ## 定理&规律
 
+- 摩尔定律
+- 局部性原理
+  - 时间局部性
+  - 空间局部性
+
 ## 计算机硬件基础架构
 
 ### 冯·诺伊曼体系结构
@@ -118,14 +123,22 @@ https://time.geekbang.org/column/article/99092
 
 #### CPU的缓存更新策略
 
-**写直达(write-through)**：
+##### Cache 写入策略
 
-**写回(write-back)**：
+**写直达(write-through)**：每一次数据都要写入到主内存里面，性能就会受限于内存的访问速度。
+
+**写回(write-back)**：脏数据，即某个时候我们的 CPU Cache 里面的这个 Block 的数据，和主内存是不一致的。
+
+![缓存更新策略](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20200716175151.png)
 
 #### 缓存一致性与MESI协议
 
+如图，缓存一致性问题：CPU1核心1 更新数据到自己的 Cache，但没更新到主内存（因为 Write Back 策略，CPU核心1 先把 Cache Block 标记为脏数据，1 号核心希望这个 Cache Block 要被交换出去的时候，才将数据写入主内存），这时 CPU核心2 如果读取数据，读取到的将是脏数据。
+
+![多核CPU缓存一致性问题](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20200716181451.png)
+
 缓存一致性问题解决机制需满足的条件：
-- 写传播：在一个 CPU 核心的 Cache 数据更新必须能后传播到其他相应节点的 Cache Line 里
+- 写传播：在一个 CPU 核心的 Cache 数据更新必须能后传播到其他相应节点的 Cache Line（缓存地址） 里
 - 事务串行化：在一个 CPU 核心里的读取和写入，在其他节点看起来顺序是一样的
 
 **解决方案**
