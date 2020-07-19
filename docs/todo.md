@@ -23,3 +23,7 @@
 - [x] 码农翻身公众号整理的系列文章，[🔗](https://mp.weixin.qq.com/s/1OSxdYuKByCwVTe-8FgrFA)
 - [ ] Serverless 浅析
 - [ ] 深入云原生
+- [ ] 了解 Golang -> encoding/json & net
+- [ ] 补齐操作系统理论知识
+- [ ] 实习周报
+- [ ] “稳住！”
