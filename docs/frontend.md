@@ -1,3 +1,11 @@
+# CSS 疑惑
+
+- CSS px 和 viewport 是怎么样的？
+- CSS 中的子元素中的百分比（%）到底是谁的百分比？
+
+> 参考：[响应式布局的常用解决方案对比(媒体查询、百分比、rem和vw/vh）](https://github.com/forthealllight/blog/issues/13)
+
+
 # 语法碎片
 
 ## ECMAScript 6
@@ -225,6 +233,24 @@ console.log(c.__proto__==Complex)//false
 实例的属性除非显式定义在其本身（即定义在this对象上），否则都是定义在原型上（即定义在class上）。
 
 **类的方法内部如果含有this，它默认指向类的实例。但是，必须非常小心，一旦单独使用该方法，很可能报错。**，[this的注意点](https://es6.ruanyifeng.com/#docs/class#%E6%B3%A8%E6%84%8F%E7%82%B9)。
+
+#### 理解原型链
+
+```js
+function Person(){
+}
+
+var person = new Person();//person 为实例
+
+console.log(Person === person.constructor);//true
+console.log(Person.prototype.constructor.name)//"Person"
+```
+
+Person.prototype 与 person.__proto__
+
+![实列](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20200720235410.png)
+
+![原型链](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20200720235239.png)
 
 ##### 类的继承
 
