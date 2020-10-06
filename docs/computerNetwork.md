@@ -11,13 +11,15 @@
 - **HTTP 1.0**：一个 TCP 连接只可以发送一个 HTTP 请求，每次请求都需要重新建立和断开 TCP 连接
 - **HTTP 1.1**：引入持久连接，使用 Header 头 `Connection: keep-alive`维持持久连接，一个连接可发送多个 HTTP 请求（但一个时刻只能发送一个），response 使用  `Connection: close` Header 断开连接
 - **HTTP 2.0**：
-  - 相对于之前文本传输，HTTP2使用二进制传输数据；
-  - 多路复用，在一个 TCP 连接中可以存在多条流
+  - 相对于之前头部信息使用文本传输，HTTP2将所传送信息分为更小的二进制帧，头部信息被封装到Header Frame，body 被封装到 Data Frame。
+  - 多路复用（http请求量大的场景下才明显），在一个 TCP 连接中可以存在多条流，一条 stream对应一个 request。stream 由 frame 组成，frame 会有标识说明它属于哪个 stream。
   - 解决队头阻塞：浏览器限制了同一个域名下的请求数量，当页面中需要请求很多资源的时候，队头阻塞（Head of line blocking）会导致在达到最大请求数量时，剩余的资源需要等待其他资源请求完成后才能发起请求。
 
 >参考：
 >[HTTP/1.x 的连接管理](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Connection_management_in_HTTP_1.x#HTTP_%E6%B5%81%E6%B0%B4%E7%BA%BF)
 >[你猜一个 TCP 连接上面能发多少个 HTTP 请求](https://zhuanlan.zhihu.com/p/61423830)
+>[HTTP2 讨论](https://www.zhihu.com/question/34074946)
+>[了解HTTP演进](https://mp.weixin.qq.com/s?__biz=MzAwMjg1NjY3Nw==&mid=2247496973&idx=1&sn=78e6d173e44a2efeabceddbcca38b5d8&chksm=9ac6b687adb13f91cb1ae2508bae118c2fa6ab0134dc5c51ced6cba4a092e325c8848571655c&mpshare=1&scene=23&srcid=0906aP8DTMmYPQaFV63Ku1oH&sharer_sharetime=1599442256662&sharer_shareid=4d09c35f897e38c8ae8043ee7861db58#rd)
 
 ### Session与Cookie
 
