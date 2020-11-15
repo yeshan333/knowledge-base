@@ -5,7 +5,7 @@
 ## 常用命令
 
 - 常用系统工作命令
-  - reboot重启系统、poweroff关闭系统
+  - `reboot`重启系统、poweroff关闭系统
   - `ps -u`查看系统中进程状态，详细信息
   - `top`强大的任务管理器，动态监控进程活动与系统运维状态
   - `kill`杀死指定PID进程
@@ -31,6 +31,7 @@
 - 搜索
   - `grep`
   - `find`按指定条件查找文件，`find .git/objects -type f`查找.git/objects目录下的所有文本文件。`-type b/d/c/p/l/f`用于指定查找文件类型
+- 网络
 
 ### Linux 文本处理三剑客
 
@@ -130,3 +131,12 @@ $ sudo systemctl daemon-reload
 ```
 
 > 参考：[Systemd 入门教程：命令篇](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)
+
+## /proc 文件系统，系统性能指标数据的源头
+
+
+## tcpdump 常用
+
+!> 命令格式tcpdump [选项] [过滤表达式]
+
+![常用总结](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20201115185251.png)

@@ -21,6 +21,10 @@
 >[HTTP2 讨论](https://www.zhihu.com/question/34074946)
 >[了解HTTP演进](https://mp.weixin.qq.com/s?__biz=MzAwMjg1NjY3Nw==&mid=2247496973&idx=1&sn=78e6d173e44a2efeabceddbcca38b5d8&chksm=9ac6b687adb13f91cb1ae2508bae118c2fa6ab0134dc5c51ced6cba4a092e325c8848571655c&mpshare=1&scene=23&srcid=0906aP8DTMmYPQaFV63Ku1oH&sharer_sharetime=1599442256662&sharer_shareid=4d09c35f897e38c8ae8043ee7861db58#rd)
 
+### 长短连接
+
+- [gRPC 长连接在微服务业务系统中的实践](https://mp.weixin.qq.com/s/LKGzc6XBAWYdskVQQJFLHw)
+
 ### Session与Cookie
 
 - Session 是在服务端保存的一个数据结构，用来跟踪用户的状态，这个数据可以保存在集群、数据库、文件中；
@@ -139,3 +143,55 @@ $$ TCP 最大连接数 = 客户端 IP 数 \times 客户端端口数 $$
 - PKI 证书体系
 - 密钥交换协议（握手谈好使用的协议）
 - 对称加密算法交换密钥
+
+## 网络安全
+
+### XSS
+
+> 参考：[美团技术团队-前端安全系列（一）：如何防止XSS攻击？](https://tech.meituan.com/2018/09/27/fe-security.html)
+
+Cross-Site Scripting（跨站脚本攻击）简称 XSS，是一种代码注入攻击。攻击者通过在目标网站上注入恶意脚本，使之在用户的浏览器上运行。利用这些恶意脚本，攻击者可获取用户的敏感信息如 Cookie、SessionID 等，进而危害数据安全。
+
+#### 攻击特点
+
+- 后端 RD 视角
+  - 存储型 XSS：常见于带有用户保存数据的网站功能，如论坛发帖、商品评论、用户私信等。
+  - 反射型 XSS：反射型 XSS 漏洞常见于通过 URL 传递参数的功能，如网站搜索、跳转等。
+  - 存储型 XSS 的恶意代码存在数据库里，反射型 XSS 的恶意代码存在 URL 里。
+- 前端 RD
+  - DOM 型 XSS：DOM 型 XSS 攻击中，取出和执行恶意代码由浏览器端完成，属于前端 JavaScript 自身的安全漏洞，而其他两种 XSS 都属于服务端的安全漏洞。
+
+#### 防护策略
+
+- 存储与反射型
+  - 纯前端渲染
+  - HTML 转义
+- DOM 型
+  - 不要把不可信的数据作为 HTML 插到页面上
+
+### CSRF 攻击与防护
+
+> 参考：[美团技术团队-前端安全系列（二）：如何防止CSRF攻击？]()
+
+CSRF（Cross-site request forgery）跨站请求伪造：攻击者诱导受害者进入第三方网站，在第三方网站中，向被攻击网站发送跨站请求。利用受害者在被攻击网站已经获取的注册凭证，绕过后台的用户验证，达到冒充用户对被攻击的网站执行某项操作的目的。
+
+#### 攻击特点
+
+- 攻击一般发起在第三方网站，而不是被攻击的网站。被攻击的网站无法防止攻击发生。
+- 攻击利用受害者在被攻击网站的登录凭证，冒充受害者提交操作；而不是直接窃取数据。
+- 整个过程攻击者并不能获取到受害者的登录凭证，仅仅是“冒用”。
+- 跨站请求可以用各种方式：图片URL、超链接、CORS、Form提交等等。部分请求方式可以直接嵌入在第三方论坛、文章中，难以进行追踪。
+
+#### 防护策略
+
+- 阻止不明外域的访问
+  - 同源检测
+  - Samesite Cookie
+- 提交时要求附加本域才能获取的信息
+  - CSRF Token
+  - 双重Cookie验证
+
+### Cookies 保护
+
+- SamSite Cookies：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+
