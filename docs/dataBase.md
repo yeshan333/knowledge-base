@@ -40,7 +40,9 @@
 - 隔离性（Isolation）
 - 持久性（Durability）
 
-#### 事务隔离级别
+#### 事务隔离级别与 MVCC
+
+>MVCC：多版本并发控制（MVCC），同一条记录在系统中可以存在多个版本。
 
 查看当前数据库设置的事务隔离级别：
 
@@ -78,3 +80,9 @@ show variables like 'transaction_isolation';
 
 
 ### MySQL 中的那些锁
+
+- 全局锁：整个数据库加锁，使用`Flush tables with read lock (FTWRL)`让数据库只读，适用于全库备份场景；
+- 表级锁
+  - 表锁：
+  - 元数据锁：访问表的时候会自动加上，写锁互斥
+- 行锁，行锁是在引擎层由各个引擎自己实现。
