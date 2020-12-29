@@ -140,3 +140,12 @@ $ sudo systemctl daemon-reload
 !> 命令格式tcpdump [选项] [过滤表达式]
 
 ![常用总结](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20201115185251.png)
+
+
+## Linux 虚拟化架构
+
+KVM - https://www.redhat.com/zh/topics/virtualization/what-is-KVM#
+
+XEN -
+
+OpenVZ -
