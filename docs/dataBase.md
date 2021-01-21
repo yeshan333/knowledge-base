@@ -125,3 +125,8 @@ show variables like 'transaction_isolation';
 
 悲观锁：假定会发生并发冲突，屏蔽一切可能违反数据完整性的操作。
 乐观锁：假设不会发生并发冲突，只在提交操作时检查是否违反数据完整性。
+
+## MongoDB
+
+- MongoDB 实际上存储的是 BSON 文档
+- MongoDB 是一个 ACID 的数据库，支持事务
