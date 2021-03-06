@@ -33,6 +33,13 @@
   - `find`按指定条件查找文件，`find .git/objects -type f`查找.git/objects目录下的所有文本文件。`-type b/d/c/p/l/f`用于指定查找文件类型
 - 网络
 
+### 查看机器配置-cheatsheet
+
+- CPU：`cat /proc/cpuinfo`
+- Memory：`cat /proc/meminfo && free -h`
+- 时间 & 时区：`timedatectl status`
+- OS 版本：`cat /etc/os-release`
+
 ### Linux 文本处理三剑客
 
 - grep
