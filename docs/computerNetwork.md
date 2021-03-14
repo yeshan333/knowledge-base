@@ -6,6 +6,14 @@
 
 ![OSI七层模型、TCP/IP四层模型](https://i.loli.net/2020/03/22/qthHTNlXyOvEfm3.png)
 
+## HTTPS
+
+![HTTPS 原理](https://cdn.jsdelivr.net/gh/ssmath/picgo-pic/img/20210314232935.png)
+
+- 参考：
+  - https://cattail.me/tech/2015/11/30/how-https-works.html
+  - [可怕，原来 HTTPS 也没用](https://mp.weixin.qq.com/s?__biz=MzU1NjgwNTExNQ==&mid=2247489276&idx=1&sn=5aad30af3131a31d6340d5e5bf85900f&chksm=fc3e2868cb49a17ec91834b86be3068f11d6cfe612a5a7d83a2a880c03b9ea9b4d8028a79a21&mpshare=1&scene=23&srcid=0314VCiQsRHCVW2zqpvJGiVo&sharer_sharetime=1615707706221&sharer_shareid=4d09c35f897e38c8ae8043ee7861db58#rd)
+
 ## HTTP
 
 - **HTTP 1.0**：一个 TCP 连接只可以发送一个 HTTP 请求，每次请求都需要重新建立和断开 TCP 连接
