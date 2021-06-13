@@ -2,13 +2,14 @@
   "name": "knowledge-base",
   "version": "1.0.0",
   "description": "Used to organize some fragmented knowledge.",
-  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "docsify": "^4.12.1"
+  },
   "devDependencies": {
-    "commitizen": "^4.2.2",
+    "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0"
   },
   "scripts": {
@@ -19,7 +20,7 @@
     "url": "git+https://github.com/yeshan333/knowledge-base.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "yeshan333",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yeshan333/knowledge-base/issues"
